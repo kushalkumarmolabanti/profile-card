@@ -1,0 +1,93 @@
+body{
+  padding: 0;
+  margin: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+}
+h3{
+  margin-bottom: 0;
+  font-weight:700;
+}
+p{
+  margin-top: 0;
+  font-weight: 400;
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+span{
+  color: hsl(0, 0%, 59%);
+}
+
+/* class selectors */
+
+.b1 ,.b2, .text{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  width: inherit;
+}
+
+.bottom_card{
+  border-top: 1px solid hsl(0, 0%, 59%);
+}
+
+.card{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+}
+
+.container{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(185, 75%, 39%);
+  height: 100vh;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: -350px -600px, 650px 300px;
+}
+
+.svg_card{
+  border-radius: 15px 15px 0 0 ;
+}
+
+.text{
+  justify-content: center;
+  margin-top: -55px;
+  margin-bottom: 10px;
+}
+
+
+
+.victor_image{
+  border-radius: 50%;
+  border: 5px solid hsl(0, 0%, 100%);
+  position: relative;
+  top: -50.5px;
+}
+
+
+@media (max-width: 376px) {
+  .container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: hsl(185, 75%, 39%);
+    height: 100vh;
+    background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: -785px -650px, 150px 180px;
+  }
+  .card{
+    margin:  0 15px 0 15px;
+  }
+}
